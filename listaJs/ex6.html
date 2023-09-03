@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+</head>
+<body>
+    <script>
+        //Pega os valores das duas notas:
+        let nota1 = parseFloat(prompt("Escreva a primeira nota: "));
+        let nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+        let aluno = 0;
+        //Faz o Cálculo da nota:
+        let resultado = (nota1 + nota2) / 2;
+
+        //Se a nota for maior ou igual a 9.5, ele dispara um alert e atribui +1 ao números de alunos aprovados:
+        if(resultado >= 9.5){
+            alert("aprovado");
+            aluno++;       
+        }else{
+            alert("reprovado");
+        }
+
+        //Faz a pergunta para o User, caso seja sim(S), a condição do while será válida.
+        let pergunta = prompt("Deseja calcular a média de uma nota? S/N: ");
+        
+        //A cada resposta sim do usuário, o while se repetirá:
+        while(pergunta == "s"){
+            let nota1 = parseFloat(prompt("Escreva a primeira nota: "));
+            let nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+            resultado = (nota1 + nota2) / 2;            
+            
+            //Verifica novamente a nota:
+            if(resultado >= 9.5){
+                alert("aprovado");
+                aluno++;       
+            }else{
+                alert("reprovado");
+            }
+            
+            //Faz novamente a pergunta para validar a condição do while:
+            pergunta = prompt("Deseja avaliar outro aluno? S/N");
+        }
+
+        alert("Número de alunos aprovados: " + aluno);
+        document.write("Número de alunos aprovados: " + aluno);
+
+    </script>
+</body>
+</html>

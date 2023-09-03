@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex7</title>
+</head>
+<body>
+    <script>
+        /* Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. 
+        Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+        Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, 
+        deve ser solicitado um novo valor ao usuário. */
+        
+        let valor = 0;
+        let sequencia = 1;
+        let qntdNota = 0;
+        let soma = 0;
+
+        //Enquanto valor for menor que 6 ela vai se repetir para que o User informe todas as notas: 
+        while(valor < 6){
+            nota = parseFloat(prompt("Insira a " + sequencia + "° nota"));
+
+            /* Agora, se alguma nota ultrapassar o valor de 10, o If irá zerar os valores para que se repita o loop do início 
+            caso contrário, continuará com o calculo: */
+            if(nota > 10){
+                alert("ERRO, insira as notas novamente!");
+                valor = 0;
+                sequencia = 1;
+            }else{
+                soma = soma + nota;
+                sequencia++;
+                qntdNota++;
+                valor++;
+            }
+        }
+        
+        alert("nota final do aluno: " + nota);
+
+    </script>
+</body>
+</html>
