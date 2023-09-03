@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário. */
+        let qntdTabuadas = prompt("Escreva o número para o total de tabuadas: ");
+        let loop = 1;
+
+        qntdTabuadas = parseInt(qntdTabuadas);
+
+        while(loop <= qntdTabuadas){
+            document.write("<p>-------------------------------------------</p>");
+            document.write("<p>Tabuada do " + loop + "</p>");
+            let tab1 = loop * 1;
+            document.write("<p>" + loop + " x 1 = " + tab1 + "</p>");
+            let tab2 = loop * 2;
+            document.write("<p>" + loop + " x 2 = " + tab2 + "</p>");
+            let tab3 = loop * 3;
+            document.write("<p>" + loop + " x 3 = " + tab3 + "</p>");
+            let tab4 = loop * 4;
+            document.write("<p>" + loop + " x 4 = " + tab4 + "</p>");
+            let tab5 = loop * 5;
+            document.write("<p>" + loop + " x 5 = " + tab5 + "</p>");
+            let tab6 = loop * 6;
+            document.write("<p>" + loop + " x 6 = " + tab6 + "</p>");
+            let tab7 = loop * 7;
+            document.write("<p>" + loop + " x 7 = " + tab7 + "</p>");
+            let tab8 = loop * 8;
+            document.write("<p>" + loop + " x 8 = " + tab8 + "</p>");
+            let tab9 = loop * 9;
+            document.write("<p>" + loop + " x 9 = " + tab9 + "</p>");
+            let tab10 = loop * 10;
+            document.write("<p>" + loop + " x 10 = " + tab10 + "</p>");
+            loop++;
+        }
+
+    </script>
+</body>
+</html>

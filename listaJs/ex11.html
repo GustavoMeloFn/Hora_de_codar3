@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11</title>
+</head>
+<body>
+    <script>
+        /* Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 
+        (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo. */
+
+        let loop = 1;
+        let qntdNumeroFora = 0;
+        let qntdNumeroDentro = 0;
+
+        while(loop <= 10){
+            let numero = parseInt(prompt("Escreva o " + loop + "° número"));
+
+            if(numero >= 24 &&  numero <= 42){
+                qntdNumeroDentro++;    
+            }else if(numero < 24 || numero > 42){
+                qntdNumeroFora++;
+            }
+
+            loop++;
+
+        }
+
+        alert("Quantidade de números dentro da condição: " + qntdNumeroDentro);
+        alert("Quantidade de números fora da condição: " + qntdNumeroFora);
+        
+        document.write("<h3>Quantidade de números dentro da condição: " + qntdNumeroDentro + "</h3>");
+        document.write("<h3>Quantidade de números fora da condição: " + qntdNumeroFora + "</h3>");
+
+    </script>
+</body>
+</html>

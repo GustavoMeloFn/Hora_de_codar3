@@ -18,12 +18,17 @@
         valor1 = parseInt(valor1);
         valor2 = parseInt(valor2);
 
+        //Enquanto esse laço for verdadeiro, ele vai fazer a soma dos números entre o valor1 e valor2;
         while(valor1 < valor2){
+            //Soma receberá o "valor1" a cada rep.
             soma = soma + valor1;
+            //qntdNumero++ nos dá a possibilidade de obter a quantidade de números entre "valor1" e "valor2".
             qntdNumero++;
-            valor1++;
+            //valo1++ Add +1 á variável soma a cada repetição. 
+            valor1++; 
         }
 
+        //pega o resulta final de soma e divide pela quantidade final obtida pela variável "qntdNumero".
         let resultado = soma / qntdNumero;
         alert("Resultado: " + resultado);
 
