@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <script>
+        /* Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, 
+        deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo. 
+        O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor. */
+
+        //valores informados:
+        let valor1 = prompt("Escreva o primero valor: ");
+        let valor2 = prompt("Escreva o segundo valor: ");
+
+        //Conversão;
+        valor1 = parseInt(valor1);
+        valor2 = parseInt(valor2);
+
+        //Enquanto o segundo valor ir de acordo com a condição, ele repetirá a estrutura: 
+        while(valor2 <= 0){
+            valor2 = prompt("Insira o segundo valor novamente: ");
+        }
+
+        //O código só fará o cálculo quando sair do loop acima:
+        let resultado = valor1 / valor2;
+        alert("Resultado da divisão: " + resultado);
+
+    </script>
+</body>
+</html>

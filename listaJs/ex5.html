@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+</head>
+<body>
+    <script>
+        /* Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário 
+        e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo. */
+
+        let valor1 = prompt("Escreva o primeiro valor: ");
+        let valor2 = prompt("Escreva o segundo valor: ");
+        let soma = 0;
+        let qntdNumero = 0;
+
+        valor1 = parseInt(valor1);
+        valor2 = parseInt(valor2);
+
+        while(valor1 < valor2){
+            soma = soma + valor1;
+            qntdNumero++;
+            valor1++;
+        }
+
+        let resultado = soma / qntdNumero;
+        alert("Resultado: " + resultado);
+
+    </script>
+</body>
+</html>
